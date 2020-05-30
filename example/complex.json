@@ -1,0 +1,24 @@
+{
+  "oneDummy": {
+    "id": 12,
+    "name": "dummy1"
+  },
+  "multipleDummy": [
+    {
+      "id": 1,
+      "name": "dummy1"
+    },
+    {
+      "id": 2,
+      "name": "dummy2"
+    },
+    {
+      "id": 3,
+      "name": "dummy3"
+    },
+    {
+      "id": 4,
+      "name": "dummy4"
+    }
+  ]
+}

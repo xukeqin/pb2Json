@@ -1,0 +1,20 @@
+{
+  "id": 5,
+  "Name": "Dostoyevski",
+  "books": [
+    {
+      "id": 1,
+      "type": "PAPER",
+      "name": "Kumarbaz"
+    },
+    {
+      "id": 2,
+      "type": "PAPER",
+      "name": "Beyaz Geceler"
+    },
+    {
+      "id": 3,
+      "name": "Yeraltindan Notlar"
+    }
+  ]
+}
