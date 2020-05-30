@@ -1,0 +1,12 @@
+{
+  "orderId": "0.12552647430517916",
+  "userId": "pinkpig",
+  "orderPrice": 100.0,
+  "deliveryPrice": 20.0,
+  "orderDatetime": "20190728231800",
+  "payMethod": "\u5fae\u4fe1\u652f\u4ed8",
+  "payDatetime": "20190728232000",
+  "deliveryMethod": "\u4eac\u4e1c\u7269\u6d41",
+  "receiverName": "pinkpig",
+  "receiverAddress": "\u5e7f\u4e1c\u7701\u6df1\u5733\u5e02\u5b9d\u5b89\u533a\u897f\u4e61\u8857\u9053"
+}

@@ -1,0 +1,32 @@
+#app {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+
+.print-box {
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+pre {
+    text-align:left;
+    font-family:Arial;
+    overflow:auto;
+    padding-top: 5%;
+    margin: 0 3% 3%;
+}
+.el-upload__text {
+    width: 100%;
+}
+.el-upload-dragger {
+    width: 100%;
+}
+.el-upload {
+    width: 100%;
+}
+
+.el-header {
+    background-color: #179ed3;
+    color: rgb(243, 236, 236);
+    line-height: 60px;
+    font-size: 25px;
+    border-radius: 20px;
+}

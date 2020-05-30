@@ -1,0 +1,20 @@
+syntax = "proto3";
+package com.pinkpig.entity.protobuf;
+
+option java_outer_classname = "OrderInfoProto";
+
+message OrderInfo {
+	string orderId = 1;
+	string userId = 2;
+	double orderPrice = 3;
+	double deliveryPrice = 4;
+	double discountPrice = 5;
+	string orderDatetime = 6;
+	string payMethod = 7;
+	string payDatetime = 8;
+	string deliveryMethod = 9;
+	string receiverName = 10;
+	string receiverAddress = 11;
+	string receiverPhone = 12;
+	string remark = 99;
+}
