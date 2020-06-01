@@ -60,6 +60,38 @@ var messageParse = (begin, end, data) => {
             oneMsg[field] = value;
             i = i+1+pbLength;
         }
+        // float
+        else if ((data[i]&0b111) == 1) {
+            var field =  data[i]>>3;
+            var sign = data[i+8]>>7;
+            var index = ((data[i+8]&0b01111111)<<4)+(data[i+3]>>4)-1023;
+            var base = 1;
+            var base_1 = (data[i+7]&0b00001111)/16;
+            var base_2 = data[i+6]/16/256;
+            var base_3 = data[i+5]/16/256/256;
+            var base_4 = data[i+4]/16/256/256/256;
+            var base_5 = data[i+3]/16/256/256/256/256;
+            var base_6 = data[i+2]/16/256/256/256/256/256;
+            var base_7 = data[i+1]/16/256/256/256/256/256/256;
+            base = base + base_1 + base_2 + base_3 + base_4 + base_5 + base_6 + base_7;
+            var value = base*Math.pow(2,index)*(1-sign*2);
+            oneMsg[field] = value;
+            i = i + 9;
+        }
+        // double
+        else if ((data[i]&0b111) == 5) {
+            var field =  data[i]>>3;
+            var sign = data[i+4]>>7;
+            var index = ((data[i+4]&0b01111111)<<1)+(data[i+3]>>7)-127;
+            var base = 1;
+            var base_1 = (data[i+3]&0b01111111)/128;
+            var base_2 = data[i+2]/128/256;
+            var base_3 = data[i+1]/128/256/256;
+            base = base + base_1 + base_2 + base_3;
+            var value = base*Math.pow(2,index)*(1-sign*2);
+            oneMsg[field] = value;
+            i = i + 5;
+        }
     }
     return oneMsg;
 }

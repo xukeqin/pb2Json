@@ -72,7 +72,6 @@ export default {
       // 校验文件的后缀是否符合
       if (!this.checkSchema(file,fileList)) {
         var index = fileList.indexOf(file);
-        console.log(index);
         if (index > -1) {
           fileList.splice(index, 1);
         }
@@ -127,8 +126,8 @@ export default {
       const reader = new FileReader()
       reader.readAsArrayBuffer(file.raw);
       reader.onload = function () {
-        console.log(this.result);
         self.protoInput = new Uint8Array(this.result);
+        console.log(self.protoInput);
         self.$message({ message: '二进制文件读取成功',type: 'success'});
       }
     },
