@@ -7,6 +7,8 @@
 
 @xukeqin with @wuyuhao @pengqiancheng @huangzhirong @liyunhui @chenzixuan
 
+dist目录下为build生成的前端代码，vue工程请按下述命令配置
+
 ## Environment
 
 `Node >= 6`
