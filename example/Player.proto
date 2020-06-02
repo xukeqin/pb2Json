@@ -1,0 +1,6 @@
+import "vector.proto";
+
+message PlayerPos {
+required uint32 playerID = 1;
+required vector3D  pos = 2;
+};
